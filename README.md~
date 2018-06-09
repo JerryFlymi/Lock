@@ -8,7 +8,7 @@
 ## 算法流程图
 ![picture](/img/picture.png)
 ## 仿真波形图
-![picture2](/img/Windows XP Professional-2018-06-09-20-10-49.png)
+![picture2](/img/win.png)
 
 ## License
 
