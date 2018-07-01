@@ -1,3 +1,25 @@
+/***************************************************************************
+**                                                                        **
+**  Lock: 数电作业：设计一个电子密码锁                                       **
+**  Copyright (C) 2018 张泽平 (Randy Hoffman)                                             **
+**                                                                        **
+**  This program is free software: you can redistribute it and/or modify  **
+**  it under the terms of the GNU General Public License as published by  **
+**  the Free Software Foundation, either version 3 of the License, or     **
+**  (at your option) any later version.                                   **
+**                                                                        **
+**  This program is distributed in the hope that it will be useful,       **
+**  but WITHOUT ANY WARRANTY; without even the implied warranty of        **
+**  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         **
+**  GNU General Public License for more details.                          **
+**                                                                        **
+**  You should have received a copy of the GNU General Public License     **
+**  along with this program.  If not, see http://www.gnu.org/licenses/.   **
+**                                                                        **
+****************************************************************************
+**           Author: 张泽平 (Randy Hoffman)                               **
+**  Website/Contact: https://github.com/zhangzp9970/Lock                  **
+****************************************************************************/
 module Passwd(
         input CLK,
         input del,
@@ -6,8 +28,8 @@ module Passwd(
         output reg [15:0] Data
 );
 integer count=0;
-reg [15:0] passwd=16'b1001_1001_0111_0000;//9970
-reg [15:0] root=16'b0000_0001_0010_0011;//0123
+reg [15:0] passwd=16'b0001_0000_0000_0001;//1001
+reg [15:0] root=16'b0001_0010_0011_0100;//1234
 initial
     begin
       Data<=0;
