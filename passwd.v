@@ -28,8 +28,8 @@ module Passwd(
         output reg [15:0] Data
 );
 integer count=0;
-reg [15:0] passwd=16'b0001_0000_0000_0001;//1001
-reg [15:0] root=16'b0001_0010_0011_0100;//1234
+reg [15:0] passwd=16'b1001_1001_0111_0000;//9970
+reg [15:0] root=16'b0000_0001_0010_0011;//0123
 initial
     begin
       Data<=0;
